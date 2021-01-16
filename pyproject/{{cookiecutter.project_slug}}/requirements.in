@@ -1,0 +1,15 @@
+attrs
+bumpver
+click
+commitizen
+flit
+jupyterlab
+jupytext
+pip-tools
+pipreqs
+pre-commit
+pyprojroot
+pytest
+pytest-cov
+towncrier
+tox
