@@ -57,7 +57,7 @@ Please avoid filing new issues as extensions of one you already made.
 
 If you run into an error or bug with the project:
 
-* Open an Issue at https://github.com/wealljs/weallcontribute/issues
+* Open an Issue at <YOUR_REPOSITORY_ISSUES_URL_HERE>
 * Include *reproduction steps* that someone else can follow to recreate the bug or error on their own.
 * Provide project and platform versions, depending on what seems relevant.
 If not, please be ready to provide that information if maintainers ask for it.
@@ -86,7 +86,7 @@ even past the 30 day deadline.
 
 If the project doesn't do something you need or want it to do:
 
-* Open an Issue at https://github.com/wealljs/weallcontribute/issues
+* Open an Issue at <YOUR_REPOSITORY_ISSUES_URL_HERE>
 * Provide as much context as you can about what you're running into.
 * Please try and be clear about why existing features and alternatives would not work for you.
 
@@ -105,24 +105,21 @@ So you wanna contribute some code! That's great! This project uses GitHub Pull R
 
 If this seems like a lot or you aren't able to do all this setup, you might also be able to [edit the files directly](https://help.github.com/articles/editing-files-in-another-user-s-repository/) without having to do any of this setup. Yes, [even code](#contribute-code).
 
-If you want to go the usual route and run the project locally, though:
-
-* [Install Node.js](https://nodejs.org/en/download/)
-* [Fork the project](https://guides.github.com/activities/forking/#fork)
-
-Then in your terminal:
-* `cd path/to/your/clone`
-* `npm install`
-* `npm test`
-
-And you should be ready to go!
+If you want to go the usual route and run the project locally, though, see [Development installation](./README.md#development-installation).
 
 
 ## Contribute Documentation
 
-Documentation is a super important, critical part of this project. Docs are how we keep track of what we're doing, how, and why. It's how we stay on the same page about our policies. And it's how we tell others everything they need in order to be able to use this project -- or contribute to it. So thank you in advance.
+Documentation is critical to this project.
+Docs are how we keep track of what we're doing, how, and why.
+It's how we stay on the same page about our policies.
+And it's how we tell others everything they need in order to be able to use this project -- or contribute to it.
+So thank you in advance.
 
-Documentation contributions of any size are welcome! Feel free to file a PR even if you're just rewording a sentence to be more clear, or fixing a spelling mistake!
+Documentation contributions of any size are welcome!
+Feel free to file a PR,
+even if you're just rewording a sentence to be more clear,
+or fixing a spelling mistake!
 
 To contribute documentation:
 
@@ -138,8 +135,15 @@ Once you've filed the PR:
 
 * One or more maintainers will use GitHub's review feature to review your PR.
 * If the maintainer asks for any changes, edit your changes, push, and ask for another review.
-* If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won't be accepting the changes. That's ok! We still really appreciate you taking the time to do it, and we don't take that lightly. 💚
-* If your PR gets accepted, it will be marked as such, and merged into the `latest` branch soon after. Your contribution will be distributed to the masses next time the maintainers [tag a release](#tag-a-release)
+* If the maintainer decides to pass on your PR,
+they will thank you for the contribution and explain why they won't be accepting the changes.
+That's ok!
+We still really appreciate you taking the time to do it,
+and we don't take that lightly. 💚
+* If your PR gets accepted,
+it will be marked as such,
+and merged into the `latest` branch soon after.
+Your contribution will be distributed to the masses next time the maintainers [tag a release](#tag-a-release)
 
 
 ## Contribute Code
@@ -180,7 +184,7 @@ Sometimes, the `support` label will be added to things that turn out to actually
 
 In order to help other folks out with their questions:
 
-* Go to the issue tracker and [filter open issues by the `support` label](https://github.com/wealljs/weallcontribute/issues?q=is%3Aopen+is%3Aissue+label%3Asupport).
+* Go to the issue tracker and [filter open issues by the `support` label](<YOUR_REPOSITORY_ISSUES_URL_HERE>?q=is%3Aopen+is%3Aissue+label%3Asupport).
 * Read through the list until you find something that you're familiar enough with to give an answer to.
 * Respond to the issue with whatever details are needed to clarify the question, or get more details about what's going on.
 * Once the discussion wraps up and things are clarified, either close the issue, or ask the original issue filer (or a maintainer) to close it for you.
@@ -198,7 +202,7 @@ Some notes on picking up support issues:
 
 One of the most important tasks in handling issues is labeling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.
 
-In order to label issues, [open up the list of unlabeled issues](https://github.com/wealljs/weallcontribute/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
+In order to label issues, [open up the list of unlabeled issues](<YOUR_REPOSITORY_ISSUES_URL_HERE>?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
 
 Label | Apply When | Notes
 --- | --- | ---
@@ -234,7 +238,7 @@ To clean up issues and PRs:
   * not marked as `starter` or `help wanted` (these might stick around for a while, in general, as they're intended to be available)
   * no explicit messages in the comments asking for it to be left open
   * does not belong to a milestone
-* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/wealljs/weallcontribute/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs for more details."
+* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See [Clean Up Issues and PRs](#clean-up-issues-and-prs) for more details."
 
 
 ## Review Pull Requests
@@ -257,14 +261,27 @@ Some notes:
 
 [Needs Collaborator](#join-the-project-team): Committer
 
-TBD - need to hash out a bit more of this process.
+To-be-documented: Fill in your process here.
+
+The most important guidelines are that:
+- you should use continuous integration.
+- passing tests in continuous integration should be blocking for merging to the branch that houses your public releases.
+- test coverage should not decrease
+  without a signed, documented, and important reason.
 
 
 ## Tag A Release
 
 [Needs Collaborator](#join-the-project-team): Committer
 
-TBD - need to hash out a bit more of this process. The most important bit here is probably that all tests must pass, and tags must use [semver](https://semver.org).
+To-be-documented: Fill in your process here.
+
+The two most important guidelines are probably as follows.  
+First, all tests must pass when tagging a release.  
+Second, tags must use and document somewhere within their repo,  
+a version system of some standard, e.g.:
+- [semver](https://semver.org)
+- [calver](https://calver.org/)
 
 
 ## Join the Project Team
@@ -287,4 +304,5 @@ Admin/Owner | Granted to people ultimately responsible for the project, its comm
 
 ## Attribution
 
-This guide was copied from [weallcontribute](https://github.com/WeAllJS/weallcontribute).
+This guide is mostly copied from [weallcontribute](https://github.com/WeAllJS/weallcontribute),
+and all edits are my own.
