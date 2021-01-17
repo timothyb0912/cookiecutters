@@ -30,6 +30,9 @@ This cookiecutter should:
 This will prevent broken links/references.
 - I need to add a `.gitignore` file to the repo.
 - I need to take notes on how I make a cookiecutter!
+  0. Begin with a process in place for tracking what you have done, and what you still have left to do.
+  E.g., what files have you added to the project vs what files have you added and finished editing?
+  Have a plan for knowing this.
   1. Find a place to start.
   Options include:
     - from scratch at the terminal with a brand new git repository,
