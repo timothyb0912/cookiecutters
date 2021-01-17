@@ -44,4 +44,6 @@ This will prevent broken links/references.
     parts via: writings, recorded video, recorded audio, screencasts, etc.
   3. Edit files as needed and as much as possible, in light of
     - consulting and drawing from best practice guides / templates per filetype.
+    E.g.:
+      - https://mozillascience.github.io/working-open-workshop/contributing/
     - reflecting on what has worked well for you in >= 2 previous projects.
