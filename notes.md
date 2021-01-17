@@ -63,4 +63,35 @@ This will prevent broken links/references.
     - consulting and drawing from best practice guides / templates per filetype.
     E.g.:
       - https://mozillascience.github.io/working-open-workshop/contributing/
+    - drawing from personally identified exemplar cookiecutters.
+    E.g.;
+      - https://github.com/frankie567/cookiecutter-hipster-pypackage
     - reflecting on what has worked well for you in >= 2 previous projects.
+
+
+## Order of files to add
+- LICENSE.txt
+- CODE_OF_CONDUCT
+- ISSUE_TEMPLATE
+- PULL_REQUEST_TEMPLATEy
+- CHANGELOG.rst (set up with towncrier)
+- AUTHORS.rst
+- .gitignore
+- pyproject.toml
+- .pre-commit-config.yaml
+- .coveragerc
+
+
+## Order of folders to add
+- docs
+- tests
+- src
+- scripts
+- configs
+- notebooks
+- reports
+- bank
+  - references (to literature or helpful documents)
+  - entire knowledge base structure (including assets / images)
+- .github
+- models
