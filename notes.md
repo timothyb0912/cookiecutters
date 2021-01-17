@@ -33,16 +33,33 @@ This will prevent broken links/references.
   0. Begin with a process in place for tracking what you have done, and what you still have left to do.
   E.g., what files have you added to the project vs what files have you added and finished editing?
   Have a plan for knowing this.
-  1. Find a place to start.
+  Have a plan for knowing the files you want to add
+  and the order you want to add them in.
+  Always compare the number of things needed to be done,
+  with the amount of time remaining left in the day to do it,
+  and with the other things you want to do in your life today,
+  or tomorrow.
+  Ask yourself, can I finish today?
+  If yes, why do I believe this?
+  What is my time-blocked plan?
+  If no, what is my plan for ending and restarting the project?
+  1. Find one or more resource on which to base / start your cookiecutter.
   Options include:
     - from scratch at the terminal with a brand new git repository,
     - from a previous project of your own,
     - from someone else's cookiecutter.
-  2. Add files as needed by
+  2. Note all the flat files included in the root of the resource identified in step 1 (if any) and:
     - reflecting on what has worked well for you in >= 2 previous projects,
     - seeking out what others have communicated about good project structure or
-    parts via: writings, recorded video, recorded audio, screencasts, etc.
-  3. Edit files as needed and as much as possible, in light of
+  parts via: writings, recorded video, recorded audio, screencasts, etc.
+  3. Order the files from step 2 in order of importance.
+  4. Note all the folders included in the root of the resource identified in step 1 (if any).
+  5. Order the folders in order of importance.
+  6. Add initial most basic version of files according to ordered list from step 3.
+  To-be-documented: what do I mean by most basic version?
+  7. Add folders according to ordered list from step 5.
+  In adding them, iterate the steps 1 - 7 on subfolders and files.
+  8. Edit files as needed and as much as possible, in light of
     - consulting and drawing from best practice guides / templates per filetype.
     E.g.:
       - https://mozillascience.github.io/working-open-workshop/contributing/
