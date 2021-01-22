@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "{{ cookiecutter.project_slug }}"
+author = "{{ cookiecutter.full_name }}"
+author-email = "{{ cookiecutter.email }}"
+homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+description-file = "README.md"
+classifiers = [
+{%- if cookiecutter.open_source_license in license_classifiers %}
+    "{{ license_classifiers[cookiecutter.open_source_license] }}",
+{%- endif %}
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.6"
+requires = [
+]
+license =  "{{ cookiecutter.open_source_license }}"
+
+[tool.flit.sdist]
+exclude = ["src/{{ cookiecutter.project_slug }}/newsfragments/"]
