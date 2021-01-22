@@ -70,22 +70,13 @@ This will prevent broken links/references.
 
 
 ## Order of files to add
-- LICENSE.txt
-- CODE_OF_CONDUCT
-- ISSUE_TEMPLATE
-- PULL_REQUEST_TEMPLATEy
-- CHANGELOG.rst (set up with towncrier)
-- AUTHORS.rst
-- .gitignore
-- pyproject.toml
 - .pre-commit-config.yaml
-- .coveragerc
 - Manifest.in (?)
 
 
 ## Order of folders to add
-- docs
 - tests
+- .github/workflows
 - src
 - scripts
 - configs
@@ -94,5 +85,4 @@ This will prevent broken links/references.
 - bank
   - references (to literature or helpful documents)
   - entire knowledge base structure (including assets / images)
-- .github
 - models
