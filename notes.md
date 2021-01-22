@@ -48,6 +48,11 @@ This will prevent broken links/references.
     - from scratch at the terminal with a brand new git repository,
     - from a previous project of your own,
     - from someone else's cookiecutter.
+      - https://github.com/ionelmc/cookiecutter-pylibrary/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D
+      - https://github.com/leynier/python-template
+      - https://github.com/frankie567/cookiecutter-hipster-pypackage/tree/master/%7B%7Bcookiecutter.dist_name%7D%7D
+      - https://github.com/Mgancita/cookiecutter-pypackage/tree/master/%7B%7Bcookiecutter.project_slug%7D%7D
+      - https://github.com/audreyfeldroy/cookiecutter-pypackage/tree/master/%7B%7Bcookiecutter.project_slug%7D%7D
   2. Note all the flat files included in the root of the resource identified in step 1 (if any) and:
     - reflecting on what has worked well for you in >= 2 previous projects,
     - seeking out what others have communicated about good project structure or
