@@ -8,6 +8,7 @@ jupytext
 pip-tools
 pipreqs
 pre-commit
+pretend
 pyprojroot
 pytest
 pytest-cov
