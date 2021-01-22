@@ -105,7 +105,7 @@ So you wanna contribute some code! That's great! This project uses GitHub Pull R
 
 If this seems like a lot or you aren't able to do all this setup, you might also be able to [edit the files directly](https://help.github.com/articles/editing-files-in-another-user-s-repository/) without having to do any of this setup. Yes, [even code](#contribute-code).
 
-If you want to go the usual route and run the project locally, though, see [Development installation](./README.md#development-installation).
+If you want to go the usual route and run the project locally, though, see [Development Installation][1].
 
 
 ## Contribute Documentation
@@ -306,3 +306,5 @@ Admin/Owner | Granted to people ultimately responsible for the project, its comm
 
 This guide is mostly copied from [weallcontribute](https://github.com/WeAllJS/weallcontribute),
 and all edits are my own.
+
+[1]: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/blob/master/README.md#development-installation
