@@ -80,6 +80,7 @@ This will prevent broken links/references.
 - pyproject.toml
 - .pre-commit-config.yaml
 - .coveragerc
+- Manifest.in (?)
 
 
 ## Order of folders to add
