@@ -5,11 +5,14 @@ commitizen
 flit
 jupyterlab
 jupytext
+mkdocs-material
 pip-tools
 pipreqs
 pre-commit
+pretend
 pyprojroot
 pytest
 pytest-cov
 towncrier
 tox
+watermark
