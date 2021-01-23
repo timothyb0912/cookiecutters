@@ -5,6 +5,7 @@ commitizen
 flit
 jupyterlab
 jupytext
+mkdocs-material
 pip-tools
 pipreqs
 pre-commit
