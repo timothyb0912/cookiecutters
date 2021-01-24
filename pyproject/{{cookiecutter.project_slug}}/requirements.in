@@ -1,7 +1,6 @@
 attrs
 bumpver
 click
-commitizen
 flit
 jupyterlab
 jupytext

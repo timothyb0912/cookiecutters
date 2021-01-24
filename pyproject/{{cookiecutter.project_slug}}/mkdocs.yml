@@ -10,7 +10,7 @@ repo_url: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.
 edit_uri: ""
 
 # Copyright
-copyright: Copyright &copy; 2020 {{ cookiecutter.full_name }}
+copyright: Copyright &copy; 2021 {{ cookiecutter.full_name }}
 
 # Configuration
 theme:
