@@ -2,4 +2,4 @@
 Your package description goes here.
 """
 
-__version__ = "0.0.0"
+__version__ = "{% now 'local', '%Y' %}.1000.{% now 'local', '%U' %}"

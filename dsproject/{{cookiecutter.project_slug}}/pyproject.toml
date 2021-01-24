@@ -106,3 +106,10 @@ exclude = '''
   )/
 )
 '''
+
+[bumpver]
+version_pattern = "YYYY.BUILD.UU"
+
+[bumpver:file_patterns]
+src/{{ cookiecutter.project_slug }}/__init__.py
+	__version__ = "{version}"
