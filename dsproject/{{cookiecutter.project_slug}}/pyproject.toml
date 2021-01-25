@@ -1,3 +1,10 @@
+{%- set license_classifiers = {
+    'MIT': 'License :: OSI Approved :: MIT License',
+    'BSD-3-Clause': 'License :: OSI Approved :: BSD License',
+    'ISC': 'License :: OSI Approved :: ISC License (ISCL)',
+    'Apache-2.0': 'License :: OSI Approved :: Apache Software License',
+    'GPL-3.0-only': 'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'
+} -%}
 [build-system]
 requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
@@ -10,7 +17,7 @@ homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutte
 description-file = "README.md"
 classifiers = [
 {%- if cookiecutter.open_source_license in license_classifiers %}
-    "{{ license_classifiers[cookiecutter.open_source_license] }}",
+license =  "{{ cookiecutter.open_source_license }}"
 {%- endif %}
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
