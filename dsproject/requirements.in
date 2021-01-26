@@ -1,0 +1,4 @@
+cookiecutter
+pip-tools
+pytest
+pytest-cookies
