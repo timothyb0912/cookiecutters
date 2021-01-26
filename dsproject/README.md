@@ -38,7 +38,7 @@ Featuring: Pre-commit, Flit, GitHub Actions and more!
 Generate the project:
 
 ```bash
-cookiecutter https://github.com/timothyb0912/cookiecutters.git --directory="pyproject"
+cookiecutter https://github.com/timothyb0912/cookiecutters.git --directory="dsproject"
 ```
 
 
