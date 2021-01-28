@@ -24,26 +24,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Make sure conda is installed, with mamba for speed
-      - name: Setup Python with Conda
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-          auto-update-conda: true
-          python-version: ${{ matrix.python-version }}
-
-      # Step 3
+      # Step 2
       - name: Install dependencies
         run: |
-          make install
+          python -m pip install --upgrade pip
+          pip install cookiecutter
+          pip install pytest
+          pip install pytest-cookies
 
-      # Step 4
+      # Step 3
       - name: Run pyproject tests
         run: |
           cd pyproject/{{cookiecutter.project_slug}}
           pytest .
           cd ../../
 
-      # Step 5
+      # Step 4
       - name: Run dsproject tests
         run: |
           cd dsproject/{{cookiecutter.project_slug}}
