@@ -26,10 +26,11 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
 
+      # see https://stackoverflow.com/questions/64589543/cannot-find-pylint-in-git-actions
+      - uses: actions/setup-python@v2
+
       # Step 2
       - name: Install dependencies
-        # see https://stackoverflow.com/questions/64589543/cannot-find-pylint-in-git-actions
-        uses: actions/setup-python@v2
         run: |
           python -m pip install --upgrade pip
           pip install cookiecutter
