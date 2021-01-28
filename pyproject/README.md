@@ -6,6 +6,7 @@ Featuring: Pre-commit, Flit, GitHub Actions and more!
 
 ## Features
 
+* [X] [Tested](https://github.com/timothyb0912/cookiecutters/tree/stable/.github/workflows/tests.yml) on Python 3.6 - 3.8.
 * [X] A README template that tells visitors what they need to know
 * [X] Compendium of helpful modules in `requirements.in`:
   * [X] Unit tests with [`pytest`](https://github.com/pytest-dev/pytest)
