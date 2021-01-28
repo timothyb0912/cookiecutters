@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements.in
 #
+appdirs==1.4.4
+    # via virtualenv
 arrow==0.13.2
     # via
     #   jinja2-time
@@ -13,46 +15,69 @@ attrs==20.3.0
     # via pytest
 binaryornot==0.4.4
     # via cookiecutter
+bumpver==2021.1109
+    # via -r requirements.in
 certifi==2020.12.5
     # via requests
+cfgv==3.2.0
+    # via pre-commit
 chardet==4.0.0
     # via
     #   binaryornot
     #   requests
 click==7.1.2
     # via
+    #   bumpver
     #   cookiecutter
     #   pip-tools
+colorama==0.4.4
+    # via bumpver
 cookiecutter==1.7.2
     # via
     #   -r requirements.in
     #   pytest-cookies
+distlib==0.3.1
+    # via virtualenv
+filelock==3.0.12
+    # via virtualenv
+identify==1.5.13
+    # via pre-commit
 idna==2.10
     # via requests
 importlib-metadata==3.4.0
     # via
     #   pluggy
+    #   pre-commit
     #   pytest
+    #   virtualenv
 jinja2-time==0.2.0
     # via cookiecutter
 jinja2==2.11.2
     # via
     #   cookiecutter
     #   jinja2-time
+lexid==2020.1005
+    # via bumpver
 markupsafe==1.1.1
     # via
     #   cookiecutter
     #   jinja2
 more-itertools==8.6.0
     # via pytest
+nodeenv==1.5.0
+    # via pre-commit
 packaging==20.8
     # via pytest
+pathlib2==2.3.5
+    # via bumpver
 pip-tools==5.5.0
     # via -r requirements.in
 pluggy==0.13.1
     # via pytest
 poyo==0.5.0
     # via cookiecutter
+pre-commit==2.10.0
+    # via -r requirements.in
 py==1.10.0
     # via pytest
 pyparsing==2.4.7
@@ -67,20 +92,30 @@ python-dateutil==2.8.1
     # via arrow
 python-slugify==4.0.1
     # via cookiecutter
+pyyaml==5.4.1
+    # via pre-commit
 requests==2.25.1
     # via cookiecutter
 six==1.15.0
     # via
     #   cookiecutter
+    #   pathlib2
     #   python-dateutil
+    #   virtualenv
 text-unidecode==1.3
     # via python-slugify
+toml==0.10.2
+    # via
+    #   bumpver
+    #   pre-commit
 topydo==0.14
     # via -r requirements.in
 typing-extensions==3.7.4.3
     # via importlib-metadata
 urllib3==1.26.3
     # via requests
+virtualenv==20.4.0
+    # via pre-commit
 wcwidth==0.2.5
     # via pytest
 zipp==3.4.0
@@ -88,3 +123,4 @@ zipp==3.4.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
+# setuptools
