@@ -28,17 +28,12 @@ jobs:
       - name: Setup Python with Conda
         uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: ${{ matrix.python }}
-          mamba-version: "*"
-          channels: conda-forge,anaconda,defaults
-          channel-priority: true
-          auto-activate-base: true
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
 
       # Step 3
       - name: Install dependencies
         run: |
-          /usr/share/miniconda/condabin/conda activate test
-          python -m pip install --upgrade pip
           make install
 
       # Step 4
