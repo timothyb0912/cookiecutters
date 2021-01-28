@@ -4,7 +4,6 @@ install :
 	python -m pip install pip-tools
 	pip-compile requirements.in
 	python -m pip install -r requirements.txt
-	flit install --pth-file
 	pre-commit install
 
 ## update      : Update project package dependencies from requirements.in.

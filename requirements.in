@@ -1,5 +1,7 @@
+bumpver
 cookiecutter
 pip-tools
+pre-commit
 pytest
 pytest-cookies
 topydo
