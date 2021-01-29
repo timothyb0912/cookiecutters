@@ -25,10 +25,17 @@ Featuring: Pre-commit, Flit, GitHub Actions and more!
   * [X] Package releasing to PyPI with [Flit](https://github.com/takluyver/flit)
   * [X] Documentation with [MkDocs](https://www.mkdocs.org/) with [Material theme](https://squidfunk.github.io/mkdocs-material/)
 * [X] Pre-commit for an array of code-quality hooks:
+  * [X] Linting with [`flake8`](https://flake8.pycqa.org/en/latest/)
   * [X] Formatting with
     * [`reorder_python_imports`](https://github.com/asottile/reorder_python_imports)
     * [`black`](https://github.com/psf/black)
-  * [ ] And MORE!
+  * [X] Notebook quality assurance with Jupytext + flake8 + black
+  * [X] Removing commented-out-code with [`eradicate`](https://github.com/myint/eradicate)
+  * [X] Removing unreachable code with [`dead`](https://github.com/asottile/dead)
+  * [X] Analyzing code complexity with [`pre-commit-xenon`](https://github.com/yunojuno/pre-commit-xenon)
+  * [X] Static type checking with [`mypy`](https://github.com/pre-commit/mirrors-mypy)
+  * [X] Security and password checking with [`bandit`](https://github.com/PyCQA/bandit) and [`dodgy`](https://github.com/landscapeio/dodgy)
+  * [X] Automatic dependency to environment syncing with [`check-pip-compile`](https://github.com/MartinThoma/check-pip-compile)
 * [X] Ready-to-use [GitHub Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions) pipelines
   * [X] Project testing
   * [X] Documentation publishing
