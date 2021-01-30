@@ -12,7 +12,7 @@ Featuring: Pre-commit, Flit, GitHub Actions and more!
   * [X] Unit tests with [`pytest`](https://github.com/pytest-dev/pytest)
   * [X] Test stubs with [Pretend](https://github.com/alex/pretend)
   * [X] Boilerplate-free classes with [Attrs](https://www.attrs.org/en/stable/)
-  * [X] Boilerplate-free command-line interfaces free with [Click](https://click.palletsprojects.com/en/7.x/)
+  * [X] Config-driven command-line interfaces with [Hydra](https://github.com/facebookresearch/hydra) and [OmegaConf](https://github.com/omry/omegaconf)
   * [X] Root references to the project folder with [Pyprojroot](https://github.com/chendaniely/pyprojroot)
   * [X] Prototypes and literate programs with [Jupyter Lab](https://jupyter.org/)
   * [X] In-notebook software-stack printing with [Watermark](https://github.com/rasbt/watermark)
