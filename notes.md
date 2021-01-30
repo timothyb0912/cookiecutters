@@ -2,7 +2,7 @@
 
 ## 2021-01-16
 
-- I need to differentiate the templates,  
+- I need to differentiate the base templates,  
 i.e., the cookiecutter for pure python projects (pyprojects),
 from the templates for:
   - data science projects
