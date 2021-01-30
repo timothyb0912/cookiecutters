@@ -2,9 +2,9 @@
 
 ## 2021-01-16
 
-- I need flags for to differentiate the parts of the base template,  
+- I need to differentiate the templates,  
 i.e., the cookiecutter for pure python projects (pyprojects),
-from parts of the template for:
+from the templates for:
   - data science projects
   These template parts should:
     - complement the pyproject cookeiecutter
