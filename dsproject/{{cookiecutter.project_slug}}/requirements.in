@@ -1,10 +1,11 @@
 attrs
 bumpver
-click
+hydra-core
 flit
 jupyterlab
 jupytext
 mkdocs-material
+omegaconf
 pip-tools
 pipreqs
 pre-commit
