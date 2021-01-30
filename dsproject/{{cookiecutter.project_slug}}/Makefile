@@ -23,6 +23,11 @@ bump :
 bump_test :
 	bumpver update --dry --no-fetch
 
+## example     : Show an example of using the project's CLI tools.
+.PHONY : example
+example :
+	python scripts/example.py
+
 ## help        : Documentation for make targets.
 .PHONY : help
 help : Makefile
