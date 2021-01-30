@@ -22,9 +22,9 @@ Longer project descriptions belong here.
 ## Usage
 Show some code that demonstrates how to use the project.
 ```
-import {{cookiecutter.project_slug}}
+cd {{cookiecutter.project_slug}}
 
-{{cookiecutter.project_slug}}.do_stuff()
+make example
 ```
 
 
