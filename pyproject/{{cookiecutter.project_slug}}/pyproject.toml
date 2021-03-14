@@ -13,12 +13,9 @@ build-backend = "flit_core.buildapi"
 module = "{{ cookiecutter.project_slug }}"
 author = "{{ cookiecutter.full_name }}"
 author-email = "{{ cookiecutter.email }}"
-homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+home-page = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 description-file = "README.md"
 classifiers = [
-{%- if cookiecutter.open_source_license in license_classifiers %}
-license =  "{{ cookiecutter.open_source_license }}"
-{%- endif %}
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
@@ -27,7 +24,9 @@ license =  "{{ cookiecutter.open_source_license }}"
 requires-python = ">=3.6"
 requires = [
 ]
+{%- if cookiecutter.open_source_license in license_classifiers %}
 license =  "{{ cookiecutter.open_source_license }}"
+{%- endif %}
 
 [tool.flit.sdist]
 exclude = ["src/{{ cookiecutter.project_slug }}/newsfragments/"]
@@ -114,9 +113,15 @@ exclude = '''
 )
 '''
 
-[bumpver]
+[tool.bumpver]
+current_version = "{% now 'local', '%Y' %}.1000.{% now 'local', '%U' %}"
 version_pattern = "YYYY.BUILD.UU"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
 
-[bumpver:file_patterns]
-src/{{ cookiecutter.project_slug }}/__init__.py
-	__version__ = "{version}"
+[tool.bumpver.file_patterns]
+"src/{{ cookiecutter.project_slug }}/__init__.py" = [
+    '__version__ = "{version}"',
+]
