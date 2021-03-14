@@ -13,7 +13,7 @@ build-backend = "flit_core.buildapi"
 module = "{{ cookiecutter.project_slug }}"
 author = "{{ cookiecutter.full_name }}"
 author-email = "{{ cookiecutter.email }}"
-homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+home-page = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 description-file = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3.6",
