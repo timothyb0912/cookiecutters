@@ -113,9 +113,15 @@ exclude = '''
 )
 '''
 
-[bumpver]
+[tool.bumpver]
+current_version = "{% now 'local', '%Y' %}.1000.{% now 'local', '%U' %}"
 version_pattern = "YYYY.BUILD.UU"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
 
-[bumpver:file_patterns]
-src/{{ cookiecutter.project_slug }}/__init__.py
-	__version__ = "{version}"
+[tool.bumpver.file_patterns]
+"src/{{ cookiecutter.project_slug }}/__init__.py" = [
+    '__version__ = "{version}"',
+]
