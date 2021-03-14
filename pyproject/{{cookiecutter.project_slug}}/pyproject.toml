@@ -16,9 +16,6 @@ author-email = "{{ cookiecutter.email }}"
 homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
 description-file = "README.md"
 classifiers = [
-{%- if cookiecutter.open_source_license in license_classifiers %}
-license =  "{{ cookiecutter.open_source_license }}"
-{%- endif %}
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
@@ -27,7 +24,9 @@ license =  "{{ cookiecutter.open_source_license }}"
 requires-python = ">=3.6"
 requires = [
 ]
+{%- if cookiecutter.open_source_license in license_classifiers %}
 license =  "{{ cookiecutter.open_source_license }}"
+{%- endif %}
 
 [tool.flit.sdist]
 exclude = ["src/{{ cookiecutter.project_slug }}/newsfragments/"]
